@@ -171,11 +171,10 @@
 
             <div class="list-frm">
               <div class="list">반려동물 품종</div>
-              <div class="my-info">aaa1234</div>
+              <input type="text" class="my-info" maxlength="15" />
             </div>
             <div class="list-frm">
               <div class="list">성별</div>
-
               <input type="radio" name="gender" id="gender_male" value="male" />
               <label for="gender_male" class="gender_male" data-action="OFF"
                 >남자</label
@@ -194,11 +193,11 @@
 
             <div class="list-frm">
               <div class="list">생일</div>
-              <input type="text" id="pet-birth" maxlength="10" />
+              <input type="date" id="pet-birth" />
             </div>
             <div class="list-frm">
               <div class="list">입양일</div>
-              <input type="text" id="pet-birth" maxlength="10" />
+              <input type="date" id="pet-birth" />
             </div>
 
             <div class="list-frm">
@@ -237,11 +236,14 @@
 
             <div class="list-frm">
               <div class="list">기타 사항</div>
-              <input
-                type="text"
-                id="act-text"
-                style="height: 50px; width: 300px"
-              />
+              <p>
+                <textarea
+                  name="act-text"
+                  placeholder="기타정보를 입력해보세요"
+                  cols="40"
+                  rows="5"
+                ></textarea>
+              </p>
             </div>
           </div>
           <!-- 등록버튼 -->
