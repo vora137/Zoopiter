@@ -63,3 +63,14 @@ function DropFile(dropAreaId, fileListId) {
 }
 
 const dropFile = new DropFile('drop-file', 'files');
+
+/* 등록완료 */
+function modify() {
+  if (window.confirm('수정하시겠습니까?')) {
+    console.log('승인');
+    location.replace('./mypage_main.html'); //'index.php'
+  } else {
+    console.log('취소');
+    return;
+  }
+}
