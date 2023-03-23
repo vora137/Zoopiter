@@ -16,6 +16,7 @@
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 </head>
 
 <body>
@@ -66,7 +67,7 @@
         <p>마이페이지</p>
         <h2>반가워요</h2>
         <div class="profile-list">
-          <div class="profile-area">
+          <div class="profile-area" onclick="petModify()">
             <div class="upload-area">
               <img src="../img/img_profile1.png" alt="" />
             </div>
@@ -236,16 +237,7 @@
               </div>
             </div>
           </div>
-          <div class="list-frm">
-            <div class="list">회원탈퇴</div>
-            <div class="my-info">
-              <div class="myprofile-button">
-                <button type="button" class="btn-frm" id="btn_withdraw" onclick="withdraw()" value="confirm">
-                  탈퇴하기
-                </button>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </main>

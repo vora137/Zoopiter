@@ -29,6 +29,7 @@
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js"></script>
     <!-- fullcalendar 언어 CDN -->
     <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   </head>
 
   <body>
@@ -78,7 +79,7 @@
         <div class="user-profile">
           <p>마이페이지</p>
           <h2>반가워요</h2>
-          <div class="profile-list">
+          <div class="profile-list" onclick="petModify()">
             <div class="profile-area">
               <div class="upload-area">
                 <img src="../img/img_profile1.png" alt="" />
