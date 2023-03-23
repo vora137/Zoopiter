@@ -55,3 +55,7 @@
   - main2.css - 배너 부터 메인 컨텐츠 영역 레이아웃 입니다.
   
 - 03.22 : 이미지 업로드부분 js추가, 일부분 반응형 반영
+
+- 03.22 : mypage_main_modify : 인증번호 입력란 추가, 탈퇴버튼 추가
+    https://sweetalert2.github.io/#download
+    mypage_pet_modify: 추가예정
