@@ -351,3 +351,7 @@ input#petname-text {
     overflow: initial;
   }
 }
+/* 활성화 된 메뉴 강조 */
+.main-gnb #pc li a.on {
+  font-weight: bold;
+}

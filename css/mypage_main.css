@@ -230,3 +230,13 @@ img {
     Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
 } */
+
+/* 활성화 된 메뉴 강조 */
+/* .active {
+  font-size: 30px;
+  font-weight: bold;
+} */
+
+.main-gnb #pc li a.on {
+  font-weight: bold;
+}

@@ -261,3 +261,24 @@ function calendarInit() {
     calendar.render();
   });
 })();
+
+/* 활성화 된 메뉴 강조 */
+
+$(function () {
+  $('#pc').children().eq(0).find('a').addClass('on');
+});
+// $(document).ready(function () {
+//   $('#pc').children().eq(0).addClass('on');
+// });
+
+// $(function () {
+//   var url = window.location.pathname,
+//     urlRegExp = new RegExp(url.replace(/\/$/, '') + '$');
+
+//   $('#pc a').each(function () {
+//     if (this.href.indexOf(url) > -1) $this.addClass('on');
+//     // if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
+//     //   $(this).addClass('active');
+//     // }
+//   });
+// });

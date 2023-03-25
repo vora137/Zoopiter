@@ -90,7 +90,7 @@
     <main class="container">
       <div class="main-gnb">
         <div class="main-gnb">
-          <div class="pc">
+          <div class="pc" id="pc">
             <ul>
               <li><a href="./mypage_main.html">보호자 정보관리</a></li>
             </ul>
@@ -274,5 +274,16 @@
     <!-- my page modify -->
     <script src="../js/mypage_main_modify.js"></script>
 </body>
+    <!-- jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $(function () {
+        $('#pc').children().eq(0).find('a').addClass('on');
+      });
+    </script>
 
 </html>
