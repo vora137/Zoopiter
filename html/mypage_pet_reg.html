@@ -91,7 +91,7 @@
       <main class="container">
         <!-- 사이드메뉴 -->
         <div class="main-gnb">
-          <div class="pc">
+          <div class="pc" id="mypagePcGnb">
             <ul>
               <li><a href="./mypage_main.html">보호자 정보관리</a></li>
             </ul>
@@ -143,7 +143,7 @@
                 <button
                   type="button"
                   class="btn-frm"
-                  id="btn_modify"
+                  id="btnModify"
                   onclick="petModify()"
                   value="confirm"
                 >
@@ -289,5 +289,17 @@
     <script src="../js/hambuger.js"></script>
     <!-- my page -->
     <script src="../js/mypage_pet_reg.js"></script>
+    <!-- jquery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    >
+  </script>
+    <script>
+      $(function () {
+        $('#mypagePcGnb').children().eq(1).find('a').addClass('on');
+      });
+    </script>
   </body>
 </html>

@@ -68,7 +68,7 @@ const dropFile = new DropFile('drop-file', 'files');
 function modify() {
   Swal.fire({
     title: '등록하시겠습니까?',
-    text: '',
+    text: '작성하신 정보가 등록됩니다',
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#333',

@@ -89,7 +89,7 @@
       <main class="container">
         <!-- 사이드메뉴 -->
         <div class="main-gnb">
-          <div class="pc" id="pc">
+          <div class="pc" id="mypagePcGnb">
             <ul>
               <li><a href="./mypage_main.html">보호자 정보관리</a></li>
             </ul>
@@ -148,7 +148,7 @@
                     input
                     type="button"
                     class="btn-frm"
-                    id="btn_modify"
+                    id="btnModify"
                     onclick="modify()"
                     value="confirm"
                   >
@@ -164,7 +164,7 @@
                   <button
                     type="button"
                     class="btn-frm"
-                    id="btn_withdraw"
+                    id="btnWithdraw"
                     onclick="withdraw()"
                     value="confirm"
                   >
@@ -217,7 +217,7 @@
     ></script>
     <script>
       $(function () {
-        $('#pc').children().eq(0).find('a').addClass('on');
+        $('#mypagePcGnb').children().eq(0).find('a').addClass('on');
       });
     </script>
   </body>
