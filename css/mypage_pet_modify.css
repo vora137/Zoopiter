@@ -352,6 +352,6 @@ input#petname-text {
   }
 }
 /* 활성화 된 메뉴 강조 */
-.main-gnb #pc li a.on {
+.main-gnb #mypagePcGnb li a.on {
   font-weight: bold;
 }

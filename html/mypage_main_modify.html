@@ -90,7 +90,7 @@
     <main class="container">
       <div class="main-gnb">
         <div class="main-gnb">
-          <div class="pc" id="pc">
+          <div class="pc" id="mypagePcGnb">
             <ul>
               <li><a href="./mypage_main.html">보호자 정보관리</a></li>
             </ul>
@@ -113,7 +113,7 @@
                 <!-- <img src="" alt="" /> -->
                 <div class="contents">
                     <div class="upload-box">
-                      <div id="drop-file" class="drag-file">
+                      <div id="dropFile" class="drag-file">
                         <img
                           src="../img/img_profile1.png"
                           alt=""
@@ -140,7 +140,7 @@
               </div>
             </div>
             <div class="myprofile-button">
-              <button type="button" class="btn-frm" id="btn_modify" onclick="modify()" value="confirm">
+              <button type="button" class="btn-frm" id="btnModify" onclick="modify()" value="confirm">
                 완료
               </button>
             </div>
@@ -231,7 +231,7 @@
             <div class="list">회원정보수정</div>
             <div class="my-info">
               <div class="myprofile-button">
-                <button type="button" class="btn-frm" id="btn_modify" onclick="modify()" value="confirm">
+                <button type="button" class="btn-frm" id="btnModify" onclick="modify()" value="confirm">
                   수정하기
                 </button>
               </div>
@@ -282,7 +282,7 @@
     ></script>
     <script>
       $(function () {
-        $('#pc').children().eq(0).find('a').addClass('on');
+        $('#mypagePcGnb').children().eq(0).find('a').addClass('on');
       });
     </script>
 

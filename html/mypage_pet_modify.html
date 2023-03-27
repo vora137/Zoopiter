@@ -91,7 +91,7 @@
       <main class="container">
         <!-- 사이드메뉴 -->
         <div class="main-gnb">
-          <div class="pc" id="pc">
+          <div class="pc" id="mypagePcGnb">
             <ul>
               <li><a href="./mypage_main.html">보호자 정보관리</a></li>
             </ul>
@@ -143,7 +143,7 @@
                 <button
                   type="button"
                   class="btn-frm"
-                  id="btn_modify"
+                  id="btn-modify"
                   onclick="modify()"
                   value="confirm"
                 >
@@ -155,7 +155,7 @@
 
             <div class="list-frm">
               <div class="list">이름</div>
-              <input type="text" id="petname-text" maxlength="10" />
+              <input type="text" id="petnameText" maxlength="10" />
               <ul>
                 <li>최대 10자까지 등록할 수 있어요 :)</li>
               </ul>
@@ -167,15 +167,15 @@
             </div>
             <div class="list-frm">
               <div class="list">성별</div>
-              <input type="radio" name="gender" id="gender_male" value="male" />
-              <label for="gender_male" class="gender_male" data-action="OFF"
+              <input type="radio" name="gender" id="genderMale" value="male" />
+              <label for="gender_male" class="genderMale" data-action="OFF"
                 >남자</label
               >
 
               <input
                 type="radio"
                 name="gender"
-                id="gender_female"
+                id="genderFemale"
                 value="female"
               />
               <label for="gender_female" class="gender_female" data-action="ON"
@@ -185,11 +185,11 @@
 
             <div class="list-frm">
               <div class="list">생일</div>
-              <input type="date" id="pet-birth" />
+              <input type="date" id="petBirth" />
             </div>
             <div class="list-frm">
               <div class="list">입양일</div>
-              <input type="date" id="pet-birth" />
+              <input type="date" id="petBirth" />
             </div>
 
             <div class="list-frm">
@@ -245,11 +245,11 @@
                 <button
                   type="button"
                   class="btn-frm"
-                  id="btn_modify"
+                  id="btnModify"
                   onclick="petModify()"
                   value="confirm"
                 >
-                  등록완료
+                  수정완료
                 </button>
               </div>
             </div>
@@ -298,7 +298,7 @@
     ></script>
     <script>
       $(function () {
-        $('#pc').children().eq(1).find('a').addClass('on');
+        $('#mypagePcGnb').children().eq(1).find('a').addClass('on');
       });
     </script>
 

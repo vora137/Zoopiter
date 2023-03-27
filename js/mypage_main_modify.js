@@ -1,7 +1,7 @@
 function modify() {
   Swal.fire({
     title: '수정하시겠습니까?',
-    text: '',
+    text: '작성하신 정보가 저장됩니다',
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#333',
@@ -96,4 +96,4 @@ function DropFile(dropAreaId, fileListId) {
   };
 }
 
-const dropFile = new DropFile('drop-file', 'files');
+const dropFile = new DropFile('dropFile', 'files');

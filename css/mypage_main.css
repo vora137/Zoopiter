@@ -224,19 +224,7 @@ img {
   /* #f26d3d; */
 }
 
-/*탈퇴버튼*/
-/* body {
-  font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
-    sans-serif;
-} */
-
 /* 활성화 된 메뉴 강조 */
-/* .active {
-  font-size: 30px;
-  font-weight: bold;
-} */
-
-.main-gnb #pc li a.on {
+.main-gnb #mypagePcGnb li a.on {
   font-weight: bold;
 }

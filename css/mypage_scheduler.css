@@ -292,3 +292,9 @@ li {
 }
 
 /* 달력 css 끝*/
+
+/* 활성화 된 메뉴 강조 */
+
+.main-gnb #mypagePcGnb li a.on {
+  font-weight: bold;
+}

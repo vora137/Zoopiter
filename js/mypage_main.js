@@ -10,7 +10,7 @@
 function modify() {
   Swal.fire({
     title: '수정하시겠습니까?',
-    text: '',
+    text: '등록한 정보를 수정하러 이동합니다',
     icon: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#333',
@@ -18,7 +18,9 @@ function modify() {
     confirmButtonText: '수정하기',
     cancelButtonText: '취소하기',
   }).then(result => {
-    location.replace('./mypage_main_modify.html');
+    if (result.isConfirmed) {
+      location.replace('./mypage_main_modify.html');
+    }
   });
 }
 
