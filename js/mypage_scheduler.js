@@ -167,7 +167,7 @@ function calendarInit() {
         right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek',
       },
       initialView: 'dayGridMonth', // 초기 로드 될때 보이는 캘린더 화면(기본 설정: 달)
-      initialDate: '2021-07-15', // 초기 날짜 설정 (설정하지 않으면 오늘 날짜가 보인다.)
+      initialDate: '2023-03-15', // 초기 날짜 설정 (설정하지 않으면 오늘 날짜가 보인다.)
       navLinks: true, // 날짜를 선택하면 Day 캘린더나 Week 캘린더로 링크
       editable: true, // 수정 가능?
       selectable: true, // 달력 일자 드래그 설정가능
@@ -203,57 +203,57 @@ function calendarInit() {
       events: [
         {
           title: 'All Day Event',
-          start: '2021-07-01',
+          start: '2023-03-01',
         },
         {
           title: 'Long Event',
           start: '2021-07-07',
-          end: '2021-07-10',
+          end: '2023-03-10',
         },
         {
           groupId: 999,
           title: 'Repeating Event',
-          start: '2021-07-09T16:00:00',
+          start: '2023-03-09T16:00:00',
         },
         {
           groupId: 999,
           title: 'Repeating Event',
-          start: '2021-07-16T16:00:00',
+          start: '2023-03-16T16:00:00',
         },
         {
           title: 'Conference',
-          start: '2021-07-11',
-          end: '2021-07-13',
+          start: '2023-07-11',
+          end: '2023-03-13',
         },
         {
           title: 'Meeting',
-          start: '2021-07-12T10:30:00',
-          end: '2021-07-12T12:30:00',
+          start: '2023-07-12T10:30:00',
+          end: '2023-03-12T12:30:00',
         },
         {
           title: 'Lunch',
-          start: '2021-07-12T12:00:00',
+          start: '2023-03-12T12:00:00',
         },
         {
           title: 'Meeting',
-          start: '2021-07-12T14:30:00',
+          start: '2023-03-12T14:30:00',
         },
         {
           title: 'Happy Hour',
-          start: '2021-07-12T17:30:00',
+          start: '2023-03-12T17:30:00',
         },
         {
           title: 'Dinner',
-          start: '2021-07-12T20:00:00',
+          start: '2023-03-12T20:00:00',
         },
         {
           title: 'Birthday Party',
-          start: '2021-07-13T07:00:00',
+          start: '2023-03-13T07:00:00',
         },
         {
           title: 'Click for Google',
           url: 'http://google.com/', // 클릭시 해당 url로 이동
-          start: '2021-07-28',
+          start: '2023-03-28',
         },
       ],
     });
@@ -267,18 +267,3 @@ function calendarInit() {
 $(function () {
   $('#pc').children().eq(0).find('a').addClass('on');
 });
-// $(document).ready(function () {
-//   $('#pc').children().eq(0).addClass('on');
-// });
-
-// $(function () {
-//   var url = window.location.pathname,
-//     urlRegExp = new RegExp(url.replace(/\/$/, '') + '$');
-
-//   $('#pc a').each(function () {
-//     if (this.href.indexOf(url) > -1) $this.addClass('on');
-//     // if (urlRegExp.test(this.href.replace(/\/$/, ''))) {
-//     //   $(this).addClass('active');
-//     // }
-//   });
-// });

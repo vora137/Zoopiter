@@ -1,82 +1,41 @@
-@charset "utf-8";
-@import 'theme/layout.css';
-
-/* section calendar */
-
-.rap {
-  max-width: 820px;
-  padding: 0 1.4rem;
-  margin-top: 0.3rem;
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  /* 숨기기 */
+  z-index: -1;
+  opacity: 0;
+}
+.window {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.dateHead {
-  margin-bottom: 0.4rem;
-}
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -40%);
 
-.dateHead div {
-  background: #fff;
-  color: #333;
-  text-align: center;
-  font-weight: bold;
+  /* 임시 지정 */
+  width: 500px;
+  height: 500px;
 }
-
-/* 토요일 일요일표시 */
-.dateHead .day:nth-child(7n-1) {
-  color: blue;
+/* 적용스타일 */
+.show {
+  opacity: 1;
+  z-index: 1000;
+  transition: all 0.5s;
 }
-.dateHead .day:nth-child(7n) {
-  color: red;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  grid-gap: 5px;
-}
-
-.grid div {
-  padding: 0.6rem;
-  font-size: 0.9rem;
-  cursor: pointer;
-}
-
-.dateBoard div {
-  color: #222;
-  font-weight: bold;
-  min-height: 6rem;
-  padding: 0.6rem 0.8rem;
-  border-radius: 0.6rem;
-  border: 1px solid #222222;
-}
-
-.noColor {
-  background: #b4b4b4;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-}
-
-.btn {
-  display: block;
-  width: 20px;
-  height: 20px;
-  border: 3px solid #000;
-  border-width: 3px 3px 0 0;
-  cursor: pointer;
-}
-
-.prevDay {
-  transform: rotate(-135deg);
-}
-
-.nextDay {
-  transform: rotate(45deg);
-}
-
-.dateBoard div p {
-  font-weight: normal;
-  margin-top: 0.2rem;
+.show .popup {
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
 }
